@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %}
+
+{% block container %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Veronica Quiros</h1>
+        <h2>{{data.canal}}</h2>
+        <ul>
+            {% for l in data.lenguajes %}
+            <li>{{ l }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

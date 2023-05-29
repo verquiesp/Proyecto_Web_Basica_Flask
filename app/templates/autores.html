@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Autores {% endblock %}
+
+{% block container %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for a in data %}
+                    <tr>
+                        <td>{{ a[0] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
